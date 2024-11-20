@@ -1,0 +1,160 @@
+html {
+    font-size: 100%;
+  }
+  
+  :root {
+    --dark: #006D77;
+    --mid: #83C5BE;
+    --light: #edf6f9;
+    --accent: #E29578;
+  }
+  
+  body {
+    background-color: #bde0eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
+    
+    font-family: "Jaldi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--dark);
+  }
+  
+  .container {
+    background-color: var(--light);
+    width: 80vw;
+    height: 60vh;
+    
+    /*From UIverse*/
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 20px -10px;
+    position: relative;
+    padding: 12px;
+   }
+   
+   .content {
+     background-color: white;
+     border-radius: 20px;
+     text-align: center;
+     height: 91%;
+   }
+   
+   /* Text*/
+  
+   h1 {
+    font-size: 2.8rem; 
+    margin: 0;
+    /* Google */
+    font-family: "Jaro", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal; 
+   }
+   
+   .edition {
+     font-size: small;
+   }
+   
+   /* Button */
+   
+    button {
+     margin-bottom: 1vh;
+     padding: 12px 20px;
+     border-radius: 20px;
+     border: 2px solid var(--accent);
+     background-color: var(--accent);
+     color: white;
+     font-weight: 700;
+     font-size: 1rem;
+   }
+   
+   button:hover {
+     background-color: #FCEFEA;
+     color: var(--accent);
+     border-color: var(--accent);
+     
+   }
+   
+  /* SVG */
+  
+  .logo {
+    margin-top: 8vh; 
+    margin-bottom: 1vh;
+  }
+  
+  .window_assets, .search_bar
+  svg path, 
+  svg rect, 
+  svg polygon {
+    fill: var(--mid);
+  }
+  
+  .top {
+    display:flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+  }
+  
+  .window_assets svg {
+    width: 15px;
+    height: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+  }
+  
+  /* Search Bar (From UIverse) */
+  
+  .search_bar {
+   display: flex;
+   line-height: 28px; /* change to vh? */
+   align-items: center;
+   position: relative;
+   max-width: 260px; /* change to vh? */
+   /*Added*/
+   margin-top: 2vh;
+   margin-bottom: 3vh;
+   margin-right: auto;
+   margin-left: auto;
+  }
+  
+  .input {
+   width: 100%;
+   height: 40px;
+   line-height: 28px;
+   padding: 0 1rem;
+   padding-left: 2.5rem;
+   border: 2px solid transparent;
+   border-radius: 8px;
+   outline: none;
+   background-color: var(--light);
+   color: var(--dark);
+   transition: .3s ease;
+  }
+  
+  .input::placeholder {
+   color: var(--mid);
+   font-size: 1rem;
+  }
+  
+  /* .input:focus, input:hover {
+   outline: none;
+   border-color: var(--mid);
+   background-color: #fff;
+   box-shadow: 0 0 0 4px var(--light);
+  } */
+  
+  .icon {
+   position: absolute;
+   left: 1rem;
+   fill: var(--med);
+   width: 1rem;
+   height: 1rem;
+  }
+  
+  input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+  }
