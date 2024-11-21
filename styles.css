@@ -169,7 +169,14 @@ input[type="search"]::-webkit-search-cancel-button {
  }
 
 @media (max-width: 600px) {
-  /* h1{
-    font-size: 
-  } */
+  .logo {
+    height: 10vh;
+    margin-top: 20vw;
+  }
+  .container {
+    min-width: 0px; 
+  }
+  h1 {
+    font-size: 4.5vh;
+  }
 }
