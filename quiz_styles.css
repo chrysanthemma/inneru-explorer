@@ -1,0 +1,30 @@
+body {
+    background-color: #006D77;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+.typewrite {
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+    text-decoration: none;
+    color: white;    
+    font-size: 3rem;
+
+    transition: 1s opacity;
+}
